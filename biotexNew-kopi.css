@@ -1,0 +1,263 @@
+/* RESET */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-weight: 400;
+}
+
+body {
+    line-height: 1.1;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;   
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content:''; content:none;
+
+}
+/*  END RESET */
+
+body {
+    width: 95%;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+}
+#topbar {
+    display: grid;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    background-color: a8ddb3;
+    width: 95%;
+    height: 130px;
+    position: fixed;
+    z-index: 2;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:     
+        "biotexlogo menulogo bent";
+    
+}
+
+#menubiotex {
+    height: 100px;
+    width:auto;
+    grid-area: biotexlogo;
+    margin-right: auto;
+    align-self: center;
+}
+
+#menulogo {
+    height: 80px;
+    width: auto;
+    grid-area: menulogo;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+
+}
+
+#menubent {
+    height: 100px;
+    width: auto;
+    grid-area: bent;
+    margin-left: auto;
+    align-self: center;
+
+    
+}
+
+
+#main {
+    
+    display: grid;
+    background-color: #fff;
+    z-index: 1;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    grid-template-areas:
+    
+        "mvaskehal mvaskehal"
+        "mbentpre mbentpre"
+        "mur mcolorful"
+        " mcafe mcafe"
+        "tidsspilde tidsspilde"
+        "smaat smaat"
+        "smaattekst smaattekst"
+        "brugbolden brugbolden"
+        "bbtekst bbtekst"
+        "cool cool"
+        "cooltekst cooltekst"
+        "fhverdag fhverdag"
+        "farvetekst farvetekst"
+        "socks socks";
+        
+    
+    
+}
+
+#mvaskehal {
+    width: 100%;
+    height: auto;
+    margin-top: 138px;
+    grid-area: mvaskehal;
+    
+    
+}
+
+#mbentpre {
+    width: 100%;
+    background-color: a8ddb3;
+    grid-area: mbentpre;
+    
+    
+}
+
+#bolden {
+    width: 100%;
+    grid-area: mur;
+    background-color: #dddddd;
+    
+    
+}
+
+#mcolorful {
+    width: 100%;
+    height: auto;
+    grid-area: mcolorful;
+    background-color: #dddddd;
+    
+    
+}
+
+#mcafe {
+    width: 100%;
+    height: auto;
+    grid-area: mcafe;
+}
+
+#tidsspilde {
+    background-color: #a8ddb3;
+    grid-area: tidsspilde; 
+    font-weight: normal;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+    font-family: 'Merriweather', serif;
+    color: #28212e;
+    
+}
+
+h1{
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 1.8em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    color: black;
+
+}
+
+#smaat{
+    width: 100%;
+    height: auto;
+    grid-area: smaat;
+}
+
+#smaattekst{ 
+    grid-area: smaattekst;
+    background-color: #a8ddb3;
+    font-weight: normal;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+    font-family: 'Merriweather', serif;
+    color: #28212e;
+
+
+}
+
+#brugbolden{
+    width: 100%;
+    height: auto;
+    grid-area: brugbolden;
+    background-color: #dddddd
+    
+}
+
+#bbtekst{
+    grid-area: bbtekst;
+    background-color: #a8ddb3;
+    font-weight: normal;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+    font-family: 'Merriweather', serif;
+    color: #28212e;
+    
+    
+}
+
+#cool{
+    width: 100%;
+    height: auto;
+    grid-area: cool;
+}
+
+#cooltekst {
+    grid-area: cooltekst;
+    background-color: #dddddd;
+    font-weight: normal;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+    font-family: 'Merriweather', serif;
+    color: #28212e;
+    
+}
+
+#fhverdag {
+    width: 100%;
+    height: auto;
+    grid-area: fhverdag;
+}
+
+#farvetekst {
+    grid-area: farvetekst;
+    background-color: #a8ddb3;
+    font-weight: normal;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+    font-family: 'Merriweather', serif;
+    color: #28212e;
+}
+
+#socks{
+    width: 100%;
+    height: auto;
+    grid-area: socks;
+}
+
+footer { 
+    
+    grid-area: farvetekst;
+    background-color: #a8ddb3;
+    font-weight: normal;
+    font-size: 0.8em;
+    padding: 0.5em;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    color: #28212e;
+}

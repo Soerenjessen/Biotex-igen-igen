@@ -39,7 +39,7 @@ body {
     border-width: 1px;
     border-color: black;
     border-style: solid;
-    background-color: a8ddb3;
+    background-color: #a8ddb3;
     width: 95%;
     height: 130px;
     position: fixed;
@@ -53,6 +53,10 @@ body {
 #menubiotex {
     height: 100px;
     width:auto;
+    
+}
+
+#divmenubiotex{
     grid-area: biotexlogo;
     margin-right: auto;
     align-self: center;
@@ -61,23 +65,25 @@ body {
 #menulogo {
     height: 80px;
     width: auto;
+}
+
+#divmenulogo{ 
     grid-area: menulogo;
     margin-left: auto;
     margin-right: auto;
     align-self: center;
-
 }
 
 #menubent {
     height: 100px;
     width: auto;
+}
+
+#divmenubent{
     grid-area: bent;
     margin-left: auto;
     align-self: center;
-
-    
 }
-
 
 #main {
     
@@ -91,72 +97,79 @@ body {
         "mvaskehal mvaskehal"
         "mbentpre mbentpre"
         "mur mcolorful"
-        " mcafe mcafe"
+        "mcafe mcafe"
         "tidsspilde tidsspilde"
         "smaat smaat"
         "smaattekst smaattekst"
-        "brugbolden brugbolden"
+        "brugboldenm brugboldenm"
         "bbtekst bbtekst"
         "cool cool"
         "cooltekst cooltekst"
-        "fhverdag fhverdag"
+        "fhverdagm fhverdagm"
         "farvetekst farvetekst"
-        "socks socks";
-        
-    
-    
+        "socksm socksm";    
 }
 
 #mvaskehal {
     width: 100%;
     height: auto;
+    
+}
+
+#divmvaskehal {
     margin-top: 138px;
     grid-area: mvaskehal;
-    
-    
 }
 
 #mbentpre {
     width: 100%;
-    background-color: a8ddb3;
-    grid-area: mbentpre;
-    
-    
+    background-color: #a8ddb3;  
 }
 
-#bolden {
+#divmbentpre {
+    grid-area: mbentpre; 
+}
+
+#boldenm {
     width: 100%;
+    background-color: #dddddd;        
+}
+
+#divboldenm{
     grid-area: mur;
-    background-color: #dddddd;
-    
-    
 }
 
 #mcolorful {
     width: 100%;
     height: auto;
+    background-color: #dddddd;        
+}
+
+#divmcolorful{
     grid-area: mcolorful;
-    background-color: #dddddd;
-    
-    
 }
 
 #mcafe {
     width: 100%;
     height: auto;
+}
+
+#divmcafe{ 
     grid-area: mcafe;
 }
 
 #tidsspilde {
     background-color: #a8ddb3;
-    grid-area: tidsspilde; 
     font-weight: normal;
     padding-left: 0.5em;
     padding-right: 0.5em;
     padding-bottom: 0.5em;
     font-family: 'Merriweather', serif;
     color: #28212e;
-    
+}
+
+#divtidsspilde{
+    grid-area: tidsspilde; 
 }
 
 h1{
@@ -169,14 +182,16 @@ h1{
 
 }
 
-#smaat{
+#smaatm{
     width: 100%;
-    height: auto;
+    height: auto;  
+}
+
+#divsmaatm{
     grid-area: smaat;
 }
 
 #smaattekst{ 
-    grid-area: smaattekst;
     background-color: #a8ddb3;
     font-weight: normal;
     padding-left: 0.5em;
@@ -184,57 +199,70 @@ h1{
     padding-bottom: 0.5em;
     font-family: 'Merriweather', serif;
     color: #28212e;
-
-
 }
 
-#brugbolden{
+#divsmaattekst{
+    grid-area: smaattekst;
+}
+
+#brugboldenm{
     width: 100%;
     height: auto;
-    grid-area: brugbolden;
-    background-color: #dddddd
-    
+    background-color: #dddddd   
+}
+
+#divbrugboldenm{
+    grid-area: brugboldenm;
 }
 
 #bbtekst{
-    grid-area: bbtekst;
     background-color: #a8ddb3;
     font-weight: normal;
     padding-left: 0.5em;
     padding-right: 0.5em;
     padding-bottom: 0.5em;
     font-family: 'Merriweather', serif;
-    color: #28212e;
-    
-    
+    color: #28212e;    
 }
 
-#cool{
+#divbbtekst{
+    grid-area: bbtekst;
+}
+
+#coolm{
     width: 100%;
     height: auto;
+}
+
+#divcoolm{
     grid-area: cool;
 }
 
 #cooltekst {
-    grid-area: cooltekst;
     background-color: #dddddd;
     font-weight: normal;
     padding-left: 0.5em;
     padding-right: 0.5em;
     padding-bottom: 0.5em;
     font-family: 'Merriweather', serif;
-    color: #28212e;
+    color: #28212e;    
+}
+
+#divcooltekst{
+    grid-area: cooltekst;
+}
+
+#fhverdagm {
+    width: 100%;
+    height: auto;
     
 }
 
-#fhverdag {
-    width: 100%;
-    height: auto;
-    grid-area: fhverdag;
+#divfhverdagm{
+    grid-area: fhverdagm;
 }
 
 #farvetekst {
-    grid-area: farvetekst;
     background-color: #a8ddb3;
     font-weight: normal;
     padding-left: 0.5em;
@@ -244,10 +272,17 @@ h1{
     color: #28212e;
 }
 
-#socks{
+#divfarvetekst{
+    grid-area: farvetekst;
+}
+
+#socksm{
     width: 100%;
     height: auto;
-    grid-area: socks;
+}
+
+#divsocksm{
+    grid-area: socksm;
 }
 
 footer { 
@@ -261,3 +296,164 @@ footer {
     font-family: 'Merriweather', serif;
     color: #28212e;
 }
+
+
+#tvaskehal, #tbentpre, #boldent, #tcolorful, #tcafe, #tidsspildet, #smaatt, #brugboldent, #coolt,#fhverdagt, #sockst  {
+    display: none; 
+}
+
+@media screen and ( min-width: 600px) {
+    
+    #mvaskehal, #mbentpre, #boldenm, #mcolorful, #mcafe, #tidsspildem, #smaatm, #brugboldenm, #coolm,#fhverdagm, #socksm  {
+        display: none;
+    }
+    
+    #main {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "tvaskehal tvaskehal tvaskehal"
+            "tbentpre tbentpre tbentpre"
+            "coolt boldent tcolorful"
+            "tcafe tcafe tcafe"
+            "tidsspild tidsspild tidsspild"
+            "smaatt smaatt smaatt"
+            "smaattt smaattt smaattt"
+            "brugboldent brugboldent brugboldent"
+            "boldtekst boldtekst boldtekst"
+            "coolt coolt coolt"
+            "koldtekst koldtekst koldtekst"
+            "hverdagt hverdagt hverdagt"
+            "farve farve farve"
+            "sockst sockst sockst";
+} 
+
+#tvaskehal{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 138px;
+} 
+
+#divtvaskehal{
+    grid-area: tvaskehal;  
+}    
+
+#tbentpre{
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+
+#divtbentpre{
+    grid-area: tbentpre;
+}
+ 
+#coolt{
+    display: block;
+    width: 100%;
+    height: auto;  
+}    
+    
+#divcoolt{
+    grid-area: coolt;    
+}    
+    
+#boldent{
+    display: block;
+    width: 100%;
+    height: auto;     
+}    
+
+#divboldent{
+    grid-area: boldent;
+}    
+    
+#tcolorful{
+    display: block;
+    width: 100%;
+    height: auto;     
+}    
+
+#divtcolorful{ 
+    grid-area: tcolorful;
+}    
+
+#tcafe{
+    display: block;
+    width: 100%;
+    height: auto;     
+}    
+    
+#divtcafe{
+    grid-area: tcafe;    
+}    
+    
+#divtidsspilde{
+    grid-area: tidsspilde;    
+}    
+    
+#smaatt{
+    display: block;
+    width: 100%;
+    height: auto;
+}    
+
+#divsmaatt{
+    grid-area: smaatt; 
+}    
+
+#brugboldent{ 
+    display: block;
+    width: 100%;
+    height: auto;
+}    
+
+#divbrugboldent{
+    grid-area: brugboldent;    
+}    
+
+#fhverdagt{
+    display: block;
+    width: 100%;
+    height: auto;  
+}    
+
+#divhverdagt{ 
+    grid-area: hverdagt;
+} 
+
+#sockst{ 
+    display: block;
+    width: 100%;
+    height: auto; 
+}   
+    
+divsockst{
+    grid-area: sockst;    
+}    
+
+#tidsspilde{
+    grid-area: tidspild;
+}    
+
+#smaattekst{
+    grid-area: smaattt;    
+}    
+
+#bbtekst{
+    grid-area: boldtekst;    
+}
+
+#cooltekst{
+    grid-area: koldtekst;    
+}    
+
+#farvetekst{
+    grid-area: farve;    
+}    
+    
+}
+    
+
+    

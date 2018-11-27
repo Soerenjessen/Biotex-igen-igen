@@ -29,31 +29,24 @@ blockquote:before, blockquote:after, q:before, q:after {
 /*  END RESET */
 
 
-#menugrid {
+#topbar {
+    display: grid;
     border-width: 1px;
     border-color: black;
     border-style: solid;
-    height: 120px;
     background-color: a8ddb3;
     width: 95%;
     position: fixed;
     right: 0;
-    left:0;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 8;
-    
-    
-}
-
-#menubar {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    left: 0;
+    margin: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas:     
-        "biotexlogo menulogo menulogo bent";
+    grid-template-areas: "biotexlog menulogo bent";
     height: 120px;
-        
+    
 }
 
 
@@ -63,9 +56,7 @@ blockquote:before, blockquote:after, q:before, q:after {
     grid-area: biotexlogo;
     display: block;
     margin-right: auto;
-    margin-left: auto;
-    padding-top: 10;
-    position: fixed;
+    align-self: center;
 }
 
 #menulogo {
@@ -75,7 +66,7 @@ blockquote:before, blockquote:after, q:before, q:after {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 20;
+    align-self: center;
 
 }
 
@@ -84,9 +75,8 @@ blockquote:before, blockquote:after, q:before, q:after {
     width: auto;
     grid-area: bent;
     display: block;
-    margin-right: auto;
     margin-left: auto;
-    padding-top: 10;
+    align-self: center;
 
     
 }
