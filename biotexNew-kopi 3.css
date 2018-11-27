@@ -143,6 +143,7 @@ body {
 
 #colorful{
     grid-area: mcolorful;
+    display: block;
 }
 
 
@@ -281,6 +282,10 @@ h1{
     grid-area: socks;
 }
 
+#ur{
+    display: none;
+}
+
 footer { 
     
     grid-area: farvetekst;
@@ -302,23 +307,58 @@ footer {
     grid-template-areas:
         "vaskehal vaskehal vaskehal"
         "mbentpre mbentpre mbentpre"
-        "cool mur fhverdag"
+        "mur ur mcolorful"
         "mcafe mcafe mcafe"
         "tidsspilde tidsspilde tidsspilde"
         "smaat smaat smaat"
         "smaattekst smaattekst smaattekst"
         "brugbolden brugbolden brugbolden"
         "bbtekst bbtekst bbtekst"
-        /*"cool cool cool"*/
+        "cool cool cool"
         "cooltekst cooltekst cooltekst"
-        /*"fhverdag fhverdag fhverdag"*/
+        "fhverdag fhverdag fhverdag"
         "farvetekst farvetekst farvetekst"
         "socks socks socks";
             
        
         
     }
+
+    #boldenm{
+        display: none;
+    }
+    #colorful{
+    display: none;
+    }
     
+    #urt{
+    display: block;    
+    width: 100%;
+    height: auto;
+    background-color: #dddddd;
+}
+
+#ur{
+    grid-area: ur;
+}
     
+}
+@media screen and (min-width: 1000px){ 
+  
+    #ur{
+        display: block;
+    }
     
+    #boldenm{
+        display: block;
+    }
+    #colorful{
+        display: block;
+    }
+    #tidsspilde {
+        align-self: center;
+    }
+    body{
+    background-color: 
+    }
 }
